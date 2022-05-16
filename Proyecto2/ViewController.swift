@@ -15,6 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //ESTO ES PARA QUITAR EL BOTON DE BACK QUE SE TIENE EN UNA VIEW CONTROLLER
+        //UTILIZAR DESPUES
+        //navigationItem.hidesBackButton = true
+        
     }
 
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZ4-au-ZqV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QZ4-au-ZqV">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -47,6 +47,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hMH-VX-DLb" kind="show" id="gug-aP-sFV"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uC-ZL-Btd">
                                 <rect key="frame" x="38" y="648" width="142" height="3"/>
@@ -72,6 +75,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Sesión">
                                     <color key="baseForegroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="P78-CF-1z4" kind="show" id="NTC-QQ-zTa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -103,6 +109,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="hMH-VX-DLb" kind="show" id="4SC-5L-PHJ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdW-02-EAG">
                                 <rect key="frame" x="35" y="364" width="305" height="34"/>
@@ -120,6 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="Zsi-rY-y5b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yEm-gf-sP0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qg-32-RGK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +164,7 @@
                                     <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="HGU-wY-1Kj" kind="show" id="4SB-fz-VZY"/>
+                                    <segue destination="epV-aT-0wZ" kind="show" id="Bdg-wj-5SX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWe-li-3M7">
@@ -166,7 +176,7 @@
                                     <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="0WR-xr-gLa" kind="show" id="MQ3-iF-Rh8"/>
+                                    <segue destination="0WR-xr-gLa" kind="show" id="79H-XK-qJr"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-ios-sf" translatesAutoresizingMaskIntoConstraints="NO" id="1N1-xa-UWk">
@@ -184,6 +194,7 @@
                         <viewLayoutGuide key="safeArea" id="TOf-6O-rRJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="1TA-eC-pMg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpS-gb-eON" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,7 +205,7 @@
             <objects>
                 <viewController id="HGU-wY-1Kj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Her-6R-dT0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="HaJ-h2-Rjf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -203,14 +214,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOa-1b-AYc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2188" y="495"/>
+            <point key="canvasLocation" x="3121" y="483"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1aT-jn-qis">
             <objects>
                 <viewController id="MeO-Jw-YoA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ztd-sy-XC4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6dY-Xw-k4N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -222,11 +233,63 @@
             <point key="canvasLocation" x="2188" y="1161"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="91T-lh-KBL">
+            <objects>
+                <viewController id="epV-aT-0wZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aE7-uY-bAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIFICULTAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwI-gB-ZLN">
+                                <rect key="frame" x="106" y="153" width="162" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOa-Yh-K2d">
+                                <rect key="frame" x="64" y="291" width="247" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Basico">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                    <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zH-56-EYu">
+                                <rect key="frame" x="64" y="417" width="247" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Intermedio">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                    <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pi0-m5-0i7">
+                                <rect key="frame" x="64" y="555" width="247" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AVANZADO">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="27"/>
+                                    <color key="baseBackgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BAI-AE-gr1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vtD-nk-k68"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqC-jG-R3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="483"/>
+        </scene>
+        <!--View Controller Ahorcado-->
         <scene sceneID="qfE-PK-yek">
             <objects>
-                <viewController id="0WR-xr-gLa" sceneMemberID="viewController">
+                <viewController id="0WR-xr-gLa" customClass="ViewControllerAhorcado" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YLi-GF-FLf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BIENVENIDO AL AHORCADO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSf-y1-v8j">
@@ -249,6 +312,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="EMPEZAR JUEGO">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="Empezar:" destination="0WR-xr-gLa" eventType="touchUpInside" id="g75-Jd-11D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vaq-yC-BhV"/>
@@ -256,23 +322,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="uWc-XT-bpQ"/>
                     <connections>
+                        <outlet property="nickJugador" destination="c0T-cY-muY" id="GDH-AQ-3jc"/>
                         <segue destination="ahg-MM-5A9" kind="show" id="mtL-tc-Ap1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kXT-Q3-Nyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="-196"/>
+            <point key="canvasLocation" x="2188" y="-197"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Ahorcado2-->
         <scene sceneID="ral-c1-QiB">
             <objects>
-                <viewController id="ahg-MM-5A9" sceneMemberID="viewController">
+                <viewController id="ahg-MM-5A9" customClass="ViewControllerAhorcado2" customModule="Proyecto2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c7W-Xo-Bpn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOMBRE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMy-Th-DrE">
-                                <rect key="frame" x="20" y="108" width="123" height="25"/>
+                                <rect key="frame" x="16" y="108" width="123" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -280,7 +347,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACIERTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8S-yd-iML">
-                                <rect key="frame" x="288" y="112" width="99" height="25"/>
+                                <rect key="frame" x="260" y="108" width="99" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -288,7 +355,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIEMPO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dd-n3-8Gs">
-                                <rect key="frame" x="46" y="155" width="123" height="27"/>
+                                <rect key="frame" x="47" y="141" width="123" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -296,227 +363,308 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hhu-px-xDE">
-                                <rect key="frame" x="76" y="307" width="263" height="228"/>
+                                <rect key="frame" x="56" y="257" width="263" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gC-mD-anE">
-                                <rect key="frame" x="55" y="555" width="44" height="44"/>
+                                <rect key="frame" x="35" y="505" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="A">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="Nx5-gh-7aW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwu-x6-8gW">
-                                <rect key="frame" x="107" y="555" width="44" height="44"/>
+                                <rect key="frame" x="87" y="505" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="B">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="I8U-lK-bPd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxc-l5-4x4">
-                                <rect key="frame" x="159" y="555" width="44" height="44"/>
+                                <rect key="frame" x="139" y="505" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="C">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="JuB-bb-WXN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQ5-3c-wv1">
-                                <rect key="frame" x="211" y="555" width="44" height="44"/>
+                                <rect key="frame" x="191" y="505" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="D">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="p1P-zd-HDD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuL-xo-L7Z">
-                                <rect key="frame" x="263" y="555" width="44" height="44"/>
+                                <rect key="frame" x="243" y="505" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="E">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="aHm-Nm-9tx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7b-5v-HGt">
-                                <rect key="frame" x="315" y="555" width="44" height="44"/>
+                                <rect key="frame" x="295" y="505" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="F">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="vjo-2d-z09"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYO-D7-zvu">
-                                <rect key="frame" x="55" y="607" width="44" height="44"/>
+                                <rect key="frame" x="35" y="557" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="G">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="GdS-CJ-af3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yY-Re-g6u">
-                                <rect key="frame" x="107" y="607" width="44" height="44"/>
+                                <rect key="frame" x="87" y="557" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="H">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="4WG-dE-UUt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7M-He-wbR">
-                                <rect key="frame" x="159" y="607" width="44" height="44"/>
+                                <rect key="frame" x="139" y="557" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="I">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="anN-Bt-3zM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsx-cZ-t84">
-                                <rect key="frame" x="211" y="607" width="44" height="44"/>
+                                <rect key="frame" x="191" y="557" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="J">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="jrI-km-WTq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFf-Vc-PSx">
-                                <rect key="frame" x="263" y="607" width="44" height="44"/>
+                                <rect key="frame" x="243" y="557" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="K">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="8yI-rf-k5h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgE-jm-e7O">
-                                <rect key="frame" x="315" y="607" width="44" height="44"/>
+                                <rect key="frame" x="295" y="557" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="L">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="sBb-tD-Ldj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67K-C1-8DF">
-                                <rect key="frame" x="55" y="659" width="44" height="44"/>
+                                <rect key="frame" x="35" y="609" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="M">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="OW5-3L-Zpe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-hW-akW">
-                                <rect key="frame" x="107" y="659" width="44" height="44"/>
+                                <rect key="frame" x="87" y="609" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="N">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="CnT-TS-S1l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVM-yD-InR">
-                                <rect key="frame" x="159" y="659" width="44" height="44"/>
+                                <rect key="frame" x="139" y="609" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="Ñ">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="I9N-oT-6lp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8b2-mn-ebf">
-                                <rect key="frame" x="211" y="659" width="44" height="44"/>
+                                <rect key="frame" x="191" y="609" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="O">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="6Pv-Lz-ylP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zx-6f-reo">
-                                <rect key="frame" x="263" y="659" width="44" height="44"/>
+                                <rect key="frame" x="243" y="609" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="P">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="aN6-QD-P2d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGZ-S1-BuB">
-                                <rect key="frame" x="315" y="659" width="44" height="44"/>
+                                <rect key="frame" x="295" y="609" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="Q">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="uJo-XX-wX2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqe-Ai-JGW">
-                                <rect key="frame" x="55" y="711" width="44" height="44"/>
+                                <rect key="frame" x="35" y="661" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="R">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="cwT-it-41s"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kb5-p5-BBv">
-                                <rect key="frame" x="107" y="711" width="44" height="44"/>
+                                <rect key="frame" x="87" y="661" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="S">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="H9u-g3-mjU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qh-1P-Og4">
-                                <rect key="frame" x="159" y="711" width="44" height="44"/>
+                                <rect key="frame" x="139" y="661" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="T">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="uAI-b3-Oof"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KR4-Lz-w2O">
-                                <rect key="frame" x="211" y="711" width="44" height="44"/>
+                                <rect key="frame" x="191" y="661" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="U">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="SPS-ng-O9F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52S-9m-NyK">
-                                <rect key="frame" x="263" y="711" width="44" height="44"/>
+                                <rect key="frame" x="243" y="661" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="V">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="ADc-hq-koU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FS-Dw-EWs">
-                                <rect key="frame" x="315" y="711" width="44" height="44"/>
+                                <rect key="frame" x="295" y="661" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="W">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="fou-XW-tx5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRQ-1M-IAk">
-                                <rect key="frame" x="55" y="763" width="44" height="44"/>
+                                <rect key="frame" x="35" y="713" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="X">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="6o8-eG-8Zv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZU-Zj-jgO">
-                                <rect key="frame" x="107" y="763" width="44" height="44"/>
+                                <rect key="frame" x="87" y="713" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="Y">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="0RS-lx-J2x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwb-7Q-Aux">
-                                <rect key="frame" x="159" y="763" width="44" height="44"/>
+                                <rect key="frame" x="139" y="713" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                <buttonConfiguration key="configuration" style="plain" title="Z">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="PulsarLetra:" destination="ahg-MM-5A9" eventType="touchUpInside" id="san-o9-QhA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PALABRA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COa-1v-bCW">
-                                <rect key="frame" x="76" y="234" width="263" height="46"/>
+                                <rect key="frame" x="56" y="193" width="263" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -528,10 +676,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NQr-B8-mJO"/>
+                    <connections>
+                        <outlet property="NumAcierto" destination="f8S-yd-iML" id="ieF-ha-UHX"/>
+                        <outlet property="imagen" destination="Hhu-px-xDE" id="Qgm-lG-Rm0"/>
+                        <outlet property="nick" destination="IMy-Th-DrE" id="AT2-x0-MLS"/>
+                        <outlet property="palabraOculta" destination="COa-1v-bCW" id="jNt-Qd-ekx"/>
+                        <outlet property="tiempo" destination="7Dd-n3-8Gs" id="6uX-Zf-UFk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCp-mr-q4C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3122" y="-196"/>
+            <point key="canvasLocation" x="3121" y="-197"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fXN-S1-08Y">
@@ -552,6 +707,9 @@
             <point key="canvasLocation" x="-507" y="-196"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gug-aP-sFV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="logo-ios-sf" width="1402" height="1025"/>
         <namedColor name="AccentColor">
