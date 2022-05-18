@@ -36,7 +36,7 @@ class ViewControllerTicTacToe: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initBoard()
         // Do any additional setup after loading the view.
     }
     
