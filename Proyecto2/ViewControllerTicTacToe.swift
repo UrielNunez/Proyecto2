@@ -14,6 +14,8 @@ class ViewControllerTicTacToe: UIViewController {
         case Cross
     }
     
+    var puntajeCirculo = 0
+    var puntajeEquis = 0
     
     @IBOutlet weak var lblTurno: UILabel!
     @IBOutlet weak var a1: UIButton!
@@ -55,15 +57,76 @@ class ViewControllerTicTacToe: UIViewController {
     @IBAction func pulsarAction(_ sender: Any) {
         agregar(sender as! UIButton)
         
+        if checkForVictory(EQUIS)
+        {
+            puntajeEquis += 1
+            alertaResultado(title: "Equis Gana!")
+        }
+        
+        if checkForVictory(CIRCULO)
+        {
+            puntajeCirculo += 1
+            alertaResultado(title: "Circulo Gana!")
+        }
+        
         if(fullBoard())
         {
             alertaResultado(title: "Empate")
         }
     }
     
+    func checkForVictory(_ s :String) -> Bool
+    {
+        // Victoria horizontal
+        if thisSymbol(a1, s) && thisSymbol(a2, s) && thisSymbol(a3, s)
+        {
+            return true
+        }
+        if thisSymbol(b1, s) && thisSymbol(b2, s) && thisSymbol(b3, s)
+        {
+            return true
+        }
+        if thisSymbol(c1, s) && thisSymbol(c2, s) && thisSymbol(c3, s)
+        {
+            return true
+        }
+        
+        // Victoria vertical
+        if thisSymbol(a1, s) && thisSymbol(b1, s) && thisSymbol(c1, s)
+        {
+            return true
+        }
+        if thisSymbol(a2, s) && thisSymbol(b2, s) && thisSymbol(c2, s)
+        {
+            return true
+        }
+        if thisSymbol(a3, s) && thisSymbol(b3, s) && thisSymbol(c3, s)
+        {
+            return true
+        }
+        
+        // Victoria diagonal
+        if thisSymbol(a1, s) && thisSymbol(b2, s) && thisSymbol(c3, s)
+        {
+            return true
+        }
+        if thisSymbol(a3, s) && thisSymbol(b2, s) && thisSymbol(c1, s)
+        {
+            return true
+        }
+        
+        return false
+    }
+    
+    func thisSymbol(_ button: UIButton, _ symbol: String) -> Bool
+    {
+        return button.title(for: .normal) == symbol
+    }
+    
     func alertaResultado(title: String)
     {
-        let ac = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
+        let message = "\nCirculo " + String(puntajeCirculo) + "\n\nEquis " + String(puntajeEquis)
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "Resultado", style: .default, handler: {(_) in
             self.reiniciar()
         }))
