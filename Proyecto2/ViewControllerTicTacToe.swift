@@ -13,10 +13,7 @@ class ViewControllerTicTacToe: UIViewController {
         case Nought
         case Cross
     }
-    
-    var puntajeCirculo = 0
-    var puntajeEquis = 0
-    
+        
     @IBOutlet weak var lblTurno: UILabel!
     @IBOutlet weak var a1: UIButton!
     @IBOutlet weak var a2: UIButton!
@@ -35,7 +32,9 @@ class ViewControllerTicTacToe: UIViewController {
     var EQUIS = "X"
     var board = [UIButton]()
     
-
+    var puntajeCirculo = 0
+    var puntajeEquis = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initBoard()
@@ -54,8 +53,8 @@ class ViewControllerTicTacToe: UIViewController {
         board.append(c3)
     }
 
-    @IBAction func pulsarAction(_ sender: Any) {
-        agregar(sender as! UIButton)
+    @IBAction func pulsarAction(_ sender: UIButton) {
+        agregar(sender)
         
         if checkForVictory(EQUIS)
         {
@@ -127,7 +126,7 @@ class ViewControllerTicTacToe: UIViewController {
     {
         let message = "\nCirculo " + String(puntajeCirculo) + "\n\nEquis " + String(puntajeEquis)
         let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
-        ac.addAction(UIAlertAction(title: "Resultado", style: .default, handler: {(_) in
+        ac.addAction(UIAlertAction(title: "Reiniciar", style: .default, handler: { (_) in
             self.reiniciar()
         }))
         self.present(ac, animated: true)
