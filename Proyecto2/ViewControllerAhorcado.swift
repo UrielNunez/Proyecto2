@@ -20,7 +20,7 @@ class ViewControllerAhorcado: UIViewController {
     @IBAction func Empezar(_ sender: UIButton) {
         if !(nickJugador.text?.isEmpty ?? true){
                  nick = nickJugador.text!
-                  performSegue(withIdentifier: "Prueba", sender: self)
+                  performSegue(withIdentifier: "PassInfo", sender: self)
                      
          }else{
              
@@ -34,23 +34,21 @@ class ViewControllerAhorcado: UIViewController {
     
 
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // MARK: - NavigatioN
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let PassInfo = segue.destination as! ViewControllerAhorcado2
         PassInfo.nicPass = nick
     }
     
     
-    /*
-       Funcion textFieldShouldReturn -> fucion para que de el teclado intro , la informacion se quede almacenada.
-          Se llama resignFirstResponde , para que renuncie a su estado como primer respondedor en su ventana
-     */
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
            return textField.resignFirstResponder()
         
        }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 
 }
