@@ -136,7 +136,7 @@ class ViewControllerTicTacToe: UIViewController {
     {
         for button in board
         {
-            button.setTitle(nil, for: .normal)
+            button.setTitle("", for: .normal)
             button.isEnabled = true
         }
         if primerTurno == Turno.Nought
@@ -156,7 +156,7 @@ class ViewControllerTicTacToe: UIViewController {
     {
         for button in board
         {
-            if button.title(for: .normal) == nil
+            if button.title(for: .normal) == ""
             {
                 return false
             }
@@ -165,7 +165,7 @@ class ViewControllerTicTacToe: UIViewController {
     }
     
     func agregar(_ sender: UIButton){
-        if(sender.title(for: .normal) == nil){
+        if(sender.title(for: .normal) == ""){
             if(turnoActual == Turno.Nought){
                 sender.setTitle(CIRCULO, for: .normal)
                 turnoActual = Turno.Cross
