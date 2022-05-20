@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		847C310828344897003BA173 /* ViewControllerTicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C310728344897003BA173 /* ViewControllerTicTacToe.swift */; };
+
 		84B41FF32836DEB2008BC80E /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF22836DEB2008BC80E /* Usuario.swift */; };
 		84B41FF72836E0A9008BC80E /* ClaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF62836E0A9008BC80E /* ClaseUsuario.swift */; };
 		84B41FF92836FB5F008BC80E /* ViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF82836FB5F008BC80E /* ViewControllerInicio.swift */; };
@@ -88,17 +89,17 @@
 				A47BB5362831D56400398DC7 /* ViewControllerAhorcado.swift */,
 				A47BB5382831DA8D00398DC7 /* ViewControllerAhorcado2.swift */,
 				847C310728344897003BA173 /* ViewControllerTicTacToe.swift */,
-
 				84B41FF22836DEB2008BC80E /* Usuario.swift */,
 				84B41FF62836E0A9008BC80E /* ClaseUsuario.swift */,
 				84B41FF82836FB5F008BC80E /* ViewControllerInicio.swift */,
 				84B41FFA28370946008BC80E /* LoginViewController.swift */,
 				84B41FFC2837101B008BC80E /* ClaseUser.swift */,
-
 				A45F82A92835A2EC00398069 /* ViewControllerJuegos.swift */,
 				A45F82A72835A19D00398069 /* ViewControllerDificultPreguntados.swift */,
 				A45F82AB2835A3D200398069 /* Palabras.swift */,
-
+				A45F82A92835A2EC00398069 /* ViewControllerJuegos.swift */,
+				A45F82A72835A19D00398069 /* ViewControllerDificultPreguntados.swift */,
+				A45F82AB2835A3D200398069 /* Palabras.swift */,
 			);
 			path = Proyecto2;
 			sourceTree = "<group>";
