@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		847C310828344897003BA173 /* ViewControllerTicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C310728344897003BA173 /* ViewControllerTicTacToe.swift */; };
-
 		84B41FF32836DEB2008BC80E /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF22836DEB2008BC80E /* Usuario.swift */; };
 		84B41FF72836E0A9008BC80E /* ClaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF62836E0A9008BC80E /* ClaseUsuario.swift */; };
 		84B41FF92836FB5F008BC80E /* ViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF82836FB5F008BC80E /* ViewControllerInicio.swift */; };
