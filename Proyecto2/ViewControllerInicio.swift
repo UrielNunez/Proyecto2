@@ -15,8 +15,12 @@ class ViewControllerInicio: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //PARA QUE NO APAREZCA EL BACK
+        navigationItem.hidesBackButton = true
+        
         lblUsuario.text = data
-        // Do any additional setup after loading the view.
+        
     }
     
 

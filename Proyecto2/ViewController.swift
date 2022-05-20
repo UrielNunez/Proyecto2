@@ -18,6 +18,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //PARA QUE NO APAREZCA EL BACK
+        navigationItem.hidesBackButton = true
         
     }
     
