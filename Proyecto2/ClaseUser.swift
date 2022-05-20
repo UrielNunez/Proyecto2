@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-var arrayUsuario : [Usuario] = [usuario1, usuario2]
-var usuario1 = Usuario(name: "Alan", scoreHangman: 0, scoreTrivia: 0, scoreTicTacToe: 0, user: "alan", password: "admin" )
-var usuario2 = Usuario(name: "Uriel", scoreHangman: 0, scoreTrivia: 0, scoreTicTacToe: 0, user: "uri", password: "admin123" )
+var arrayUsuario : [User] = [usuario1, usuario2]
+var usuario1 = User(name: "Alan", scoreHangman: 0, scoreTrivia: 0, scoreTicTacToe: 0, user: "alan", password: "admin" )
+var usuario2 = User(name: "Uriel", scoreHangman: 0, scoreTrivia: 0, scoreTicTacToe: 0, user: "uri", password: "admin123" )
 
-class Usuario{
+class User{
     var name: String;
     var scoreHangman: Int;
     var scoreTrivia: Int;

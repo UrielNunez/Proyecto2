@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LUsuario: NSObject{
+class Usuario: NSObject{
     var usuario: String
     var pass: String
 
