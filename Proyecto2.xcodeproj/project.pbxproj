@@ -8,17 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		847C310828344897003BA173 /* ViewControllerTicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847C310728344897003BA173 /* ViewControllerTicTacToe.swift */; };
-<<<<<<< HEAD
 		84B41FF32836DEB2008BC80E /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF22836DEB2008BC80E /* Usuario.swift */; };
 		84B41FF72836E0A9008BC80E /* ClaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF62836E0A9008BC80E /* ClaseUsuario.swift */; };
 		84B41FF92836FB5F008BC80E /* ViewControllerInicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FF82836FB5F008BC80E /* ViewControllerInicio.swift */; };
 		84B41FFB28370946008BC80E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FFA28370946008BC80E /* LoginViewController.swift */; };
 		84B41FFD2837101B008BC80E /* ClaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B41FFC2837101B008BC80E /* ClaseUser.swift */; };
-=======
 		A45F82A82835A19D00398069 /* ViewControllerDificultPreguntados.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F82A72835A19D00398069 /* ViewControllerDificultPreguntados.swift */; };
 		A45F82AA2835A2EC00398069 /* ViewControllerJuegos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F82A92835A2EC00398069 /* ViewControllerJuegos.swift */; };
 		A45F82AC2835A3D200398069 /* Palabras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F82AB2835A3D200398069 /* Palabras.swift */; };
->>>>>>> 113b355a4884cf7737fe26b61b157161bd6f036c
 		A47BB5372831D56400398DC7 /* ViewControllerAhorcado.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BB5362831D56400398DC7 /* ViewControllerAhorcado.swift */; };
 		A47BB5392831DA8D00398DC7 /* ViewControllerAhorcado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47BB5382831DA8D00398DC7 /* ViewControllerAhorcado2.swift */; };
 		A47E6B452825ECB20098087A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E6B442825ECB20098087A /* AppDelegate.swift */; };
@@ -31,17 +28,14 @@
 
 /* Begin PBXFileReference section */
 		847C310728344897003BA173 /* ViewControllerTicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTicTacToe.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		84B41FF22836DEB2008BC80E /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		84B41FF62836E0A9008BC80E /* ClaseUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaseUsuario.swift; sourceTree = "<group>"; };
 		84B41FF82836FB5F008BC80E /* ViewControllerInicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInicio.swift; sourceTree = "<group>"; };
 		84B41FFA28370946008BC80E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84B41FFC2837101B008BC80E /* ClaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaseUser.swift; sourceTree = "<group>"; };
-=======
 		A45F82A72835A19D00398069 /* ViewControllerDificultPreguntados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDificultPreguntados.swift; sourceTree = "<group>"; };
 		A45F82A92835A2EC00398069 /* ViewControllerJuegos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerJuegos.swift; sourceTree = "<group>"; };
 		A45F82AB2835A3D200398069 /* Palabras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabras.swift; sourceTree = "<group>"; };
->>>>>>> 113b355a4884cf7737fe26b61b157161bd6f036c
 		A47BB5362831D56400398DC7 /* ViewControllerAhorcado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAhorcado.swift; sourceTree = "<group>"; };
 		A47BB5382831DA8D00398DC7 /* ViewControllerAhorcado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAhorcado2.swift; sourceTree = "<group>"; };
 		A47E6B412825ECB20098087A /* Proyecto2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proyecto2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,17 +88,17 @@
 				A47BB5362831D56400398DC7 /* ViewControllerAhorcado.swift */,
 				A47BB5382831DA8D00398DC7 /* ViewControllerAhorcado2.swift */,
 				847C310728344897003BA173 /* ViewControllerTicTacToe.swift */,
-<<<<<<< HEAD
+
 				84B41FF22836DEB2008BC80E /* Usuario.swift */,
 				84B41FF62836E0A9008BC80E /* ClaseUsuario.swift */,
 				84B41FF82836FB5F008BC80E /* ViewControllerInicio.swift */,
 				84B41FFA28370946008BC80E /* LoginViewController.swift */,
 				84B41FFC2837101B008BC80E /* ClaseUser.swift */,
-=======
+
 				A45F82A92835A2EC00398069 /* ViewControllerJuegos.swift */,
 				A45F82A72835A19D00398069 /* ViewControllerDificultPreguntados.swift */,
 				A45F82AB2835A3D200398069 /* Palabras.swift */,
->>>>>>> 113b355a4884cf7737fe26b61b157161bd6f036c
+
 			);
 			path = Proyecto2;
 			sourceTree = "<group>";
@@ -187,12 +181,9 @@
 				84B41FF32836DEB2008BC80E /* Usuario.swift in Sources */,
 				A47E6B452825ECB20098087A /* AppDelegate.swift in Sources */,
 				A47E6B472825ECB20098087A /* SceneDelegate.swift in Sources */,
-<<<<<<< HEAD
 				84B41FF72836E0A9008BC80E /* ClaseUsuario.swift in Sources */,
 				84B41FFD2837101B008BC80E /* ClaseUser.swift in Sources */,
-=======
 				A45F82A82835A19D00398069 /* ViewControllerDificultPreguntados.swift in Sources */,
->>>>>>> 113b355a4884cf7737fe26b61b157161bd6f036c
 				A47BB5372831D56400398DC7 /* ViewControllerAhorcado.swift in Sources */,
 				84B41FF92836FB5F008BC80E /* ViewControllerInicio.swift in Sources */,
 				84B41FFB28370946008BC80E /* LoginViewController.swift in Sources */,
